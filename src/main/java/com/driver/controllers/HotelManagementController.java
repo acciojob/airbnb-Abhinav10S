@@ -34,7 +34,7 @@ public class HotelManagementController {
         if (hotel.getHotelName() == null || hotel == null) {
             return "FAILURE";
         }
-        if (hotelMap.containsKey(hotel)) {
+        if (hotelMap.containsKey(hotel.getHotelName())) {
             return "FAILURE";
         }
         hotelMap.put(hotel.getHotelName() , hotel) ;
